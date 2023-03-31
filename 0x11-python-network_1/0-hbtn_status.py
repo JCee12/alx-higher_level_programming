@@ -2,12 +2,11 @@
 """fetches https://alx-intranet.hbtn.io/status
 """
 
+from urllib import 
 
 if __name__ == "__main__":
-    import urllib.request
-
-    with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as res:
-        content = res.read()
+    with request.urlopen("https://intranet.hbtn.io/status") as page:
+        content = page.read()
         print("Body response:")
         print("\t- type: {}".format(type(content)))
         print("\t- content: {}".format(content))
